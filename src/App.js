@@ -1,10 +1,16 @@
 import "./styles.css";
-import HomePage from "./Components/HomePage";
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./Pages/HomePage";
+import EmployeePage from "./Pages/EmployeePage"
+
 
 export default function App() {
   return (
     <div className="App">
-      <HomePage />
+      <Routes>
+        <Route path ="/" element={<HomePage />} />
+        <Route path ="/employee/:name" element={<EmployeePage />} />
+      </Routes>
     </div>
   );
 }

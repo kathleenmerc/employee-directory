@@ -1,7 +1,7 @@
 import "react";
-import Header from "./Header";
-import SearchBar from "./SearchBar";
-import EmployeeList from "./EmployeeList";
+import Header from "../Components/homepage/Header";
+import SearchBar from "../Components/homepage/SearchBar";
+import EmployeeList from "../Components/homepage/EmployeeList";
 
 export default function Homepage() {
   return (

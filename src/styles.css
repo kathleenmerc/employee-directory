@@ -1,5 +1,13 @@
 .App {
   font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  border: 5px solid #3f3b6c;
+  border-radius: 10px;
+  background-color: rgb(16, 2, 41);
 }
 
 * {
@@ -9,12 +17,16 @@
   box-sizing: border-box;
 }
 
+/* HOMEPAGE */
+
 .homepage {
   display: flex;
   flex-direction: column;
 
-  border: 2px solid orange;
-  width: 500px;
+  border: 2px solid #3f3b6c;
+  border-radius: 10px;
+  /* width: 50vw; */
+  margin: 5px;
 }
 
 .header {
@@ -22,8 +34,8 @@
   justify-content: center;
   align-items: center;
 
+  color: white;
   font-size: 30px;
-  border: 2px solid blue;
   padding: 5px;
   margin: 5px;
 }
@@ -33,34 +45,40 @@
   align-items: center;
   justify-content: space-between;
 
-  border: 2px solid green;
-  padding: 5px;
+  padding: 5px 10px 5px 10px;
   margin: 5px;
   width: 99;
 }
 
 .search {
-  font-size: 16px;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 10px;
+  width: 100%;
 }
 
 button {
   padding: 5px;
   margin: 5px;
-  font-size: 16px;
+  font-size: 18px;
   width: 70px;
-  border-radius: 10%;
-  background-color: green;
+  border-radius: 10px;
+  background-color: #a3c7d6;
+  color: #2c3333;
 }
 
 .employeeList {
   display: flex;
   flex-direction: column;
+  margin: 10px;
 }
 
 .employeeCard {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  border: 2px solid red;
+  border: 2px solid #9f73ab;
+  background-color: #9f73ab;
+  border-radius: 10px;
   margin: 5px;
   text-align: left;
 }
@@ -68,16 +86,18 @@ button {
 .cardBody {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .cardName {
   font-size: 20px;
-  padding: 10px 10px 5px 0px;
+  padding: 5px 5px 5px 0px;
+  color: rgb(16, 2, 41);
 }
 
 .cardPosition {
   font-size: 16px;
-  color: gray;
+  color: rgb(229, 235, 238);
 }
 
 .cardImg {
@@ -85,3 +105,93 @@ button {
   border-radius: 50%;
   margin: 10px;
 }
+
+/* EMPLOYEE PAGE */
+.employeePage {
+  display: flex;
+  flex-direction: column;
+
+  border: 2px solid #3f3b6c;
+  border-radius: 10px;
+  width: 50vw;
+  margin: 5px;
+}
+
+.contactEmployeeProfile {
+  margin: 5px;
+  text-align: left;
+  height: 70%;
+  border-radius: 10px;
+}
+
+.contactProfile {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  border: 2px solid #3f3b6c;
+  border-radius: 10px;
+  margin: 5px;
+  text-align: left;
+  height: 100px;
+  background-color: #9f73ab;
+}
+
+.profileImgBorder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileImg {
+  width: 80px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.profileBody {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin: 5px;
+}
+
+.profileName {
+  font-size: 22px;
+  padding: 10px 10px 5px 0px;
+}
+
+.profilePosition {
+  font-size: 16px;
+  color: rgb(229, 235, 238);
+  padding-left: 1px;
+}
+
+.contactInfoList {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.contactInfoBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid #3f3b6c;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+  height: 75px;
+  background-color: #9f73ab;
+}
+
+.labels {
+  font-size: 18px;
+  padding: 5px;
+  padding-bottom: 0px;
+}
+
+.labelInfo {
+  font-size: 16px;
+  color: rgb(229, 235, 238);
+  padding: 5px;
+}
+
