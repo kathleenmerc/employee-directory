@@ -2,7 +2,6 @@ import "react";
 import Header from "../Components/homepage/Header";
 import ContactEmployeeProfile from "../Components/employeePage/ContactEmployeeProfile";
 import { Link } from "react-router-dom";
-import employeeInfoArray from "../data"
 
 export default function EmployeePage() {
     return (

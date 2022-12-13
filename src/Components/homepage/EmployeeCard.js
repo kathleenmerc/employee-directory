@@ -4,10 +4,10 @@ import { Link } from "react-router-dom"
 
 export default function EmployeeCard({ img, name, position }) {
 
-  const joinedName = name.split(" ").join("")
+  //const joinedName = name.split(" ").join("")
 
   return (
-    <Link to={`/employee/${joinedName}`} style={{textDecoration:"none"}}>
+    <Link to={`/employee/${name}`} style={{textDecoration:"none"}}>
 
       <div className="employeeCard">
         <CardImg img={img} />
